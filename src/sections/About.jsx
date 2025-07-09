@@ -13,13 +13,19 @@ const About = () => {
         variants={slideUpVariants}
         className="lg:w-[60%] w-full flex flex-col justify-between items-startgap-6"
       >
+     
+        <motion.h1
+          variants={slideUpVariants}
+          className="text-yellow-500 text-2xl"
+        >
+          WELCOME TO
+        </motion.h1>
         <motion.h1
           variants={slideUpVariants}
           className="text-white uppercase text-[40px] font-bold"
         >
           Mega Construction
         </motion.h1>
-
         <div className="w-[120px] h-[6px] bg-yellow-500 "></div>
         <p className="text-3xl italic text-gray-50 mt-[60px]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
