@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { slideUpVariants, zoomInVariants } from "./animation";
 const Hero = () => {
   return (
+    // must be fixed the height for mobile view
     <div
       id="home"
       className="bg-black w-full lg:h-lvh h-fit m-auto pt-[60px] lg:pt-[0px] lg:px-[150px] px-[20px] flex justify-between items-center lg:flex-row flex-col lg:gap-5 gap-[50px] bg-cover bg-center "
