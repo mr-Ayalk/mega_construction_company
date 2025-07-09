@@ -1,8 +1,10 @@
-import React from 'react'
-
+import React from "react";
+import { motion } from "framer-motion";
+import { slideUpVariants, zoomInVariants } from "./animation";
+import { planning } from "../export.js";
 const Working = () => {
   return (
-   <div>
+    <div id="working" className="w-full bg-white">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -13,36 +15,46 @@ const Working = () => {
           variants={slideUpVariants}
           className="text-yellow-500 text-2xl"
         >
-          PORTFOLIO
+          STEP BY STEP
         </motion.h1>
         <motion.h1
           variants={slideUpVariants}
-          className="text-white uppercase text-[40px] font-bold text-center "
+          className="text-black uppercase text-[40px] font-bold text-center "
         >
-          OUR BEST PPROJECTS
+          HOW IT'S WORKING
         </motion.h1>
         <motion.div
           variants={slideUpVariants}
           className="w-[120px] h-[6px] bg-yellow-500"
         ></motion.div>
-      </motion.div>
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        variants={zoomInVariants}
-        className="w-full m-auto grid lg:grid-cols-4 grid-cols-1"
-      >
-        <img src={project1} alt="project image" className="h-[250px] w-full" />
-        <img src={project2} alt="project image" className="h-[250px] w-full" />
-        <img src={project3} alt="project image" className="h-[250px] w-full" />
-        <img src={project4} alt="project image" className="h-[250px] w-full" />
-        <img src={project5} alt="project image" className="h-[250px] w-full" />
-        <img src={project6} alt="project image" className="h-[250px] w-full" />
-        <img src={project7} alt="project image" className="h-[250px] w-full" />
-        <img src={project8} alt="project image" className="h-[250px] w-full" />
+
+        {/*make div for service maping from export js file */}
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={zoomInVariants}
+          className="w-full grid lg:grid-cols-4 grid-cols-1 justify-center items-center gap-[20px] mt-[30px]"
+        >
+          {planning.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col justify-center items-center gap-5 border-2 border-yellow-500 rounded-md p-6"
+            >
+              <div className="">
+                {" "}
+                <item.icon className="size-[80px] bg-yellow-500 hover:bg-black hover:fill-white p-4 rounded-full cursor-pointer" />
+                <h1 className="text-2xl font-bold uppercase">{item.title}</h1>
+                <p className="text-[20px] text-center text-gray-600 ">
+                  {item.about}
+                </p>
+              </div>
+            </div>
+          ))}
+        </motion.div>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default Working
+export default Working;
