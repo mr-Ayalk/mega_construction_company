@@ -1,7 +1,7 @@
 import React from "react";
 import project1 from "../assets/project1.jpg";
-import project2 from "../assets/project2.jpg";
-import project3 from "../assets/project3.jpg";
+import project2 from "../assets/homeimg1.jpg";
+import project3 from "../assets/realstate2.jpg";
 import project4 from "../assets/project4.jpg";
 import project5 from "../assets/project5.jpg";
 import project6 from "../assets/project6.jpg";
@@ -42,14 +42,139 @@ const Portfolio = () => {
         variants={zoomInVariants}
         className="w-full m-auto grid lg:grid-cols-4 grid-cols-1"
       >
-        <img src={project1} alt="project image" className="h-[250px] w-full" />
-        <img src={project2} alt="project image" className="h-[250px] w-full" />
-        <img src={project3} alt="project image" className="h-[250px] w-full" />
-        <img src={project4} alt="project image" className="h-[250px] w-full" />
-        <img src={project5} alt="project image" className="h-[250px] w-full" />
-        <img src={project6} alt="project image" className="h-[250px] w-full" />
-        <img src={project7} alt="project image" className="h-[250px] w-full" />
-        <img src={project8} alt="project image" className="h-[250px] w-full" />
+        <div className="w-full items-center text-white text-center border-2 rounded-md p-5 m-2  ">
+          <img
+            src={project1}
+            alt="project image"
+            className="h-[250px] w-full  "
+          />
+          <h3 className="items-center justify-center text-xl">Smart Homes</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            doloribus recusandae{" "}
+          </p>
+        </div>
+        <div className="w-full items-center text-white text-center border-2 rounded-md p-5 m-2  ">
+          <img
+            src={project2}
+            alt="project image"
+            className="h-[250px] w-full  "
+          />
+          <h3 className="items-center justify-center text-xl">Smart Homes</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            doloribus recusandae{" "}
+          </p>
+        </div>{" "}
+        <div className="w-full items-center text-white text-center border-2 rounded-md p-5 m-2  ">
+          <img
+            src={project3}
+            alt="project image"
+            className="h-[250px] w-full  "
+          />
+          <h3 className="items-center justify-center text-xl">Real States</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            doloribus recusandae{" "}
+          </p>
+        </div>
+        <div className="w-full items-center text-white text-center border-2 rounded-md p-5 m-2  ">
+          <img
+            src={project4}
+            alt="project image"
+            className="h-[250px] w-full  "
+          />
+          <h3 className="items-center justify-center text-xl">Villa House</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            doloribus recusandae{" "}
+          </p>
+        </div>{" "}
+        <div className="w-full items-center text-white text-center border-2 rounded-md p-5 m-2  ">
+          <img
+            src={project5}
+            alt="project image"
+            className="h-[250px] w-full  "
+          />
+          <h3 className="items-center justify-center text-xl">Smart Homes</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            doloribus recusandae{" "}
+          </p>
+        </div>{" "}
+        <div className="w-full items-center text-white text-center border-2 rounded-md p-5 m-2  ">
+          <img
+            src={project6}
+            alt="project image"
+            className="h-[250px] w-full  "
+          />
+          <h3 className="items-center justify-center text-xl">Smart Homes</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            doloribus recusandae{" "}
+          </p>
+        </div>{" "}
+        <div className="w-full items-center text-white text-center border-2 rounded-md p-5 m-2  ">
+          <img
+            src={project7}
+            alt="project image"
+            className="h-[250px] w-full  "
+          />
+          <h3 className="items-center justify-center text-xl">Smart Homes</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            doloribus recusandae{" "}
+          </p>
+        </div>{" "}
+        <div className="w-full items-center text-white text-center border-2 rounded-md p-5 m-2  ">
+          <img
+            src={project8}
+            alt="project image"
+            className="h-[250px] w-full  "
+          />
+          <h3 className="items-center justify-center text-xl">Smart Homes</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            doloribus recusandae{" "}
+          </p>
+        </div>
+        {/* 
+
+        <img
+          src={project2}
+          alt="project image"
+          className="h-[250px] w-full "
+        />
+        <img
+          src={project3}
+          alt="project image"
+          className="h-[250px] w-full p-5"
+        />
+        <img
+          src={project4}
+          alt="project image"
+          className="h-[250px] w-full p-5"
+        />
+        <img
+          src={project5}
+          alt="project image"
+          className="h-[250px] w-full p-5"
+        />
+        <img
+          src={project6}
+          alt="project image"
+          className="h-[250px] w-full p-5"
+        />
+        <img
+          src={project7}
+          alt="project image"
+          className="h-[250px] w-full p-5"
+        />
+        <img
+          src={project8}
+          alt="project image"
+          className="h-[250px] w-full p-5"
+        /> */}
       </motion.div>
     </div>
   );
