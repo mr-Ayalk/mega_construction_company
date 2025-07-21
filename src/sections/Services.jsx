@@ -4,7 +4,7 @@ import { slideUpVariants, zoomInVariants } from "./animation";
 import { allservices } from "../export.js";
 const Services = () => {
   return (
-    <div id="services" className="w-full bg-white">
+    <div id="services" className="w-full bg-gray-700">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -19,7 +19,7 @@ const Services = () => {
         </motion.h1>
         <motion.h1
           variants={slideUpVariants}
-          className="text-black uppercase text-[40px] font-bold text-center "
+          className="text-white uppercase text-[40px] font-bold text-center "
         >
           OUR BEST SERVICES
         </motion.h1>
@@ -40,12 +40,12 @@ const Services = () => {
             <motion.div
               key={index}
               variants={zoomInVariants}
-              className="flex justify-center items-start gap-5 p-8"
+              className="flex justify-center items-start gap-5 p-8 text-white"
             >
               <img
                 src={item.icon}
                 alt="icon"
-                className="w-[70px] border-2 border-yellow-500 hover:bg-yellow-500 rounded-lg p-2 "
+                className="w-[70px] border-2 border-yellow-500 hover:bg-yellow-500 rounded-lg p-2 text-white bg-white "
               />
               <div className="flex flex-col justify-center items-start gap-3">
                 <h1 className="text-xl font-bold">{item.title}</h1>
