@@ -11,7 +11,7 @@ const StatsSection = () => {
   const stats = [
     {
       label: "Completed Projects",
-      value: 200,
+      value: 2000,
       prefix: "",
       suffix: "+",
       description:
@@ -19,14 +19,14 @@ const StatsSection = () => {
     },
     {
       label: "Ongoing Projects",
-      value: 20,
+      value: 200,
       prefix: "",
       suffix: "+",
       description: "Projects currently under development or management.",
     },
     {
       label: "Workers",
-      value: 70,
+      value: 700,
       prefix: "",
       suffix: "+",
       description: "Dedicated professionals working under our company.",

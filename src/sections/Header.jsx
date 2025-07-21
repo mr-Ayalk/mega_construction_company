@@ -45,8 +45,8 @@ const Header = () => {
             smooth={true}
             offset={50}
             duration={500}
-            onClick={() => setActiveLink(link)} // immediate feedback
-            onSetActive={() => setActiveLink(link)} // scroll-triggered update
+      onClick={() => setActiveLink("Contact")}
+  onSetActive={() => setActiveLink("Contact")} // scroll-triggered update
             className={`uppercase font-bold cursor-pointer p-3 rounded-full px-5 text-[15px]
     ${
       activeLink === link
