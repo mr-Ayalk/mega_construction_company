@@ -16,22 +16,22 @@ import {
 import { allservices } from "../export.js";
 const Portfolio = () => {
   return (
-    <div>
+    <div className="text-center">
       <motion.div
         initial="hidden"
         whileInView="visible"
         variants={slideUpVariants}
-        className="lg:w-[80%] w-[90%] m-auto py-[60px] flex flex-col justify-between items-center gap-[20px]"
+        className="lg:w-[100%] w-[100%] m-4 py-[60px] flex flex-col justify-between items-center gap-[20px] "
       >
         <motion.h1
           variants={slideUpVariants}
-          className="text-orange-500 text-2xl"
+          className="text-orange-500 text-2xl !text-center w-full"
         >
           PORTFOLIO
         </motion.h1>
         <motion.h1
           variants={slideUpVariants}
-          className="text-white uppercase text-[40px] font-bold text-center "
+          className="text-white uppercase text-[40px] font-bold !text-center !mx-auto w-full "
         >
           OUR BEST PPROJECTS
         </motion.h1>
@@ -44,12 +44,12 @@ const Portfolio = () => {
         initial="hidden"
         whileInView="visible"
         variants={slidedownVariants}
-        className="w-full m-auto grid lg:grid-cols-4 grid-cols-1"
+        className="w-full m-auto grid lg:grid-cols-4 grid-cols-1 !justify-between"
       >
         <div
-          className="w-full 
+          className="w-[90%] m-auto my-3
        
-        items-center text-white text-center border-2 rounded-md  cursor-pointer   p-5 m-2    "
+        items-center text-white text-center border-2 rounded-md  cursor-pointer   p-5    "
         >
           <img
             src={project1}
@@ -62,7 +62,7 @@ const Portfolio = () => {
             doloribus recusandae{" "}
           </p>
         </div>
-        <div className="w-full items-center text-white text-center border-2 rounded-md  cursor-pointer p-5 m-2  ">
+        <div className="w-[90%] m-auto m-autoitems-center text-white text-center border-2 rounded-md  cursor-pointer p-5  ">
           <img
             src={project2}
             alt="project image"
@@ -74,7 +74,7 @@ const Portfolio = () => {
             doloribus recusandae{" "}
           </p>
         </div>{" "}
-        <div className="w-full items-center text-white text-center border-2 rounded-md  cursor-pointer p-5 m-2  ">
+        <div className="w-[90%] m-auto items-center text-white text-center border-2 rounded-md  cursor-pointer p-5   ">
           <img
             src={project3}
             alt="project image"
@@ -86,7 +86,7 @@ const Portfolio = () => {
             doloribus recusandae{" "}
           </p>
         </div>
-        <div className="w-full items-center text-white text-center border-2 rounded-md  cursor-pointer p-5 m-2  ">
+        <div className="w-[90%] m-auto items-center text-white text-center border-2 rounded-md  cursor-pointer p-5   ">
           <img
             src={project4}
             alt="project image"
@@ -100,7 +100,7 @@ const Portfolio = () => {
             doloribus recusandae{" "}
           </p>
         </div>{" "}
-        <div className="w-full items-center text-white text-center border-2 rounded-md  cursor-pointer p-5 m-2  ">
+        <div className="w-[90%] m-auto items-center text-white text-center border-2 rounded-md  cursor-pointer p-5 my-3   ">
           <img
             src={project5}
             alt="project image"
@@ -114,7 +114,7 @@ const Portfolio = () => {
             doloribus recusandae{" "}
           </p>
         </div>{" "}
-        <div className="w-full items-center text-white text-center border-2 rounded-md  cursor-pointer p-5 m-2  ">
+        <div className="w-[90%] m-auto items-center text-white text-center border-2 rounded-md  cursor-pointer p-5   ">
           <img
             src={project6}
             alt="project image"
@@ -126,7 +126,7 @@ const Portfolio = () => {
             doloribus recusandae{" "}
           </p>
         </div>{" "}
-        <div className="w-full items-center text-white text-center border-2 rounded-md  cursor-pointer p-5 m-2  ">
+        <div className="w-[90%] m-auto items-center text-white text-center border-2 rounded-md  cursor-pointer p-5  ">
           <img
             src={project7}
             alt="project image"
@@ -140,7 +140,7 @@ const Portfolio = () => {
             doloribus recusandae{" "}
           </p>
         </div>{" "}
-        <div className="w-full items-center text-white text-center border-2 rounded-md  cursor-pointer p-5 m-2  ">
+        <div className="w-[90%] m-auto items-center text-white text-center border-2 rounded-md  cursor-pointer p-5   ">
           <img
             src={project8}
             alt="project image"

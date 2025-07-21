@@ -14,4 +14,5 @@ body {
   padding: 0; /* Remove this if it's causing issues */
   box-sizing: border-box;
   background-color: rgb(45, 42, 42);
+  overflow-x: hidden;
 }
