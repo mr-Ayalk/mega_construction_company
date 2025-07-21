@@ -42,15 +42,17 @@ const Header = () => {
             key={path}
             to={path}
             spy={true}
-            offset={-100}
             smooth={true}
-            onSetActive={() => setActiveLink(link)}
+            offset={0}
+            duration={500}
+            onClick={() => setActiveLink(link)} // immediate feedback
+            onSetActive={() => setActiveLink(link)} // scroll-triggered update
             className={`uppercase font-bold cursor-pointer p-3 rounded-full px-5 text-[15px]
-        ${
-          activeLink === link
-            ? "bg-orange-500 text-white"
-            : "text-black hover:bg-orange-100 hover:text-black"
-        }`}
+    ${
+      activeLink === link
+        ? "bg-orange-500 text-white"
+        : "text-black hover:bg-orange-300 hover:text-black"
+    }`}
           >
             {link}
           </Link>
