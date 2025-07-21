@@ -4,12 +4,12 @@ import { slideUpVariants, zoomInVariants } from "./animation";
 import { planning } from "../export.js";
 const Working = () => {
   return (
-    <div id="working" className="w-full bg-white">
+    <div id="working" className="w-full bg-amber-100 text-center">
       <motion.div
         initial="hidden"
         whileInView="visible"
         variants={slideUpVariants}
-        className="lg:w-[80%] w-[90%] m-auto py-[60px] flex flex-col justify-between items-center gap-[20px]"
+        className="lg:w-[80%] w-[90%] m-auto py-[60px] flex flex-col justify-between items-center gap-[20px] "
       >
         <motion.h1
           variants={slideUpVariants}
@@ -42,9 +42,12 @@ const Working = () => {
               className="flex flex-col justify-center items-center gap-5 border-2 border-yellow-500 rounded-md p-6"
             >
               <div className="">
-                {" "}
-                <item.icon className="size-[80px] bg-yellow-500 hover:bg-black hover:fill-white p-4 rounded-full cursor-pointer" />
-                <h1 className="text-2xl font-bold uppercase">{item.title}</h1>
+                <div className="flex flex-row !items-center gap-2">
+                  <item.icon className="size-[80px] bg-yellow-500 hover:bg-black hover:fill-white p-4 rounded-full cursor-pointer !items-center" />
+                  <h1 className="text-2xl font-bold uppercase ">
+                    {item.title}
+                  </h1>
+                </div>
                 <p className="text-[20px] text-center text-gray-600 ">
                   {item.about}
                 </p>
