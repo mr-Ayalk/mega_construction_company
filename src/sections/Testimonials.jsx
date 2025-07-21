@@ -34,22 +34,20 @@ const Testimonials = () => {
           initial="hidden"
           whileInView="visible"
           variants={zoomInVariants}
-          className="lg:w-full w-[90%] grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-8 mt-[30px]"
+          className="lg:w-full w-[90%] grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-8 mt-[30px] "
         >
           {clients.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col justify-center items-center"
+              className="flex flex-col justify-center items-center "
             >
-              <div className="border-2 border-white hover:bg-yellow-500 pb-[100px] pt-[30px]">
-                <p className="text-white hover:text-black text-lg text-center">
-                  {item.about}
-                </p>
+              <div className="border-2 rounded-lg border-white transition delay-300 pb-[100px] pt-[30px] cursor-pointer hover:scale-110">
+                <p className="text-white  text-lg text-center">{item.about}</p>
               </div>
               <div className="flex flex-col justify-center items-center gap-[5px]">
                 <img
                   src={item.image}
-                  className="mt-[-50px] "
+                  className="mt-[-50px] z-30 "
                   alt="clients image"
                 />
                 <h1 className="text-white text-[27px] font-semibold uppercase">
