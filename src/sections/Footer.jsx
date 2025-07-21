@@ -2,16 +2,29 @@ import React from "react";
 import { Link } from "react-scroll";
 import { FaArrowUp } from "react-icons/fa";
 import { FaCopyright } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <div className="bg-gray-700 text-white flex justify-center items-center gap-2 p-5 ">
-        <span className="!fill-yellow-500 lg:size-5 size-8"> &copy;</span>
-
-        {/* <FaCopyright  /> */}
-        <p className="text-lg text-center ">
-          Copyright 2025 ,TOP CONSTRUCTION,All Rights Reserved
-        </p>
+      <div className="bg-gray-700 text-white flex justify-between items-center gap-2 p-5 font-serif ">
+        <div className="text-amber-300">Top Construction</div>
+        <div className="flex flex-row items-center ">
+          <FaCopyright className="size-4" />
+          <p className="text-lg text-center ml-2 ">
+            Copyright 2025 ,All Rights Reserved
+          </p>
+        </div>
+        <div className="flex gap-4 text-2xl text-amber-300">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FaFacebook />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp />
+          </a>
+        </div>
       </div>
       {/* scroll to top button */}
       {/* <div
