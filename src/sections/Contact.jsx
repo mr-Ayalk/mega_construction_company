@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { slideUpVariants, zoomInVariants } from "./animation";
 const Contact = () => {
   return (
-    <div id="contact" className="bg-white w-full">
+    <div id="contact" className="bg-amber-100 w-full">
       <div
         className="lg:w-[80%] w-[90%]  m-auto py-[60px] flex lg:flex-row flex-col justify-between items-start gap-[50px]"
         id="about"
@@ -63,7 +63,7 @@ const Contact = () => {
 
             <motion.button
               variants={zoomInVariants}
-              className="bg-yellow-500 hover:bg-black hover:text-white px-10 py-4 text-black font-bold rounded-lg w-full"
+              className="bg-yellow-500 hover:bg-black hover:text-white px-10 py-4 transition delay-300 text-black font-bold rounded-lg w-full"
             >
               SUBMIT
             </motion.button>
