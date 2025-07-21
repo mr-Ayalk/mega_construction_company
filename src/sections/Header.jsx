@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState("Contact");
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -36,40 +37,26 @@ const Header = () => {
         Top <span className="text-orange-500  italic">Construction</span>
       </h1>
       <ul className="lg:flex justify-center items-center gap-6 hidden rounded-full shadow-lg border-[1px]  border-gray-400">
-        {/* {navItems.map(({ link, path }) => (
-          <Link
-            key={path}
-            className="text-black uppercase font-bold cursor-pointer p-3 rounded-full hover:bg-orange-300
-           
-            
-            px-5
-            hover:text-black text-[15px]"
-            to={path}
-            spy={true}
-            offset={-100}
-            smooth={true}
-          >
-            {link}
-          </Link>
-        ))} */}
         {navItems.map(({ link, path }) => (
           <Link
             key={path}
-            className={`uppercase font-bold cursor-pointer p-3 rounded-full px-5 text-[15px] 
-      ${
-        link === "Contact"
-          ? "bg-orange-500 text-white hover:bg-black hover:text-white"
-          : "text-black hover:bg-orange-300 hover:text-black"
-      }`}
             to={path}
             spy={true}
             offset={-100}
             smooth={true}
+            onSetActive={() => setActiveLink(link)}
+            className={`uppercase font-bold cursor-pointer p-3 rounded-full px-5 text-[15px]
+        ${
+          activeLink === link
+            ? "bg-orange-500 text-white"
+            : "text-black hover:bg-orange-100 hover:text-black"
+        }`}
           >
             {link}
           </Link>
         ))}
       </ul>
+
       <button className="bg-orange-500   hover:bg-black hover:text-white text-black  py-3 rounded-full font-semibold transform hover:scale-105 transition-transform duration-300 cursor-pointer md:flex hidden px-10">
         REACH US
       </button>
