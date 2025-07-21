@@ -25,3 +25,15 @@ export const zoomInVariants = {
     },
   },
 };
+export const slidedownVariants = {
+  hidden: { y: -50, opacity: 0 }, // Start slightly below with no opacity
+  visible: {
+    y: 0, // Final position
+    opacity: 1, // Fully visible
+    transition: {
+      staggerChildern: 2,
+      duration: 1.5, // Duration of the slide-up animation
+      ease: "easeOut",
+    },
+  },
+};

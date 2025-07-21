@@ -8,7 +8,11 @@ import project6 from "../assets/project6.jpg";
 import project7 from "../assets/project7.jpg";
 import project8 from "../assets/abrehot.jpg";
 import { motion } from "framer-motion";
-import { slideUpVariants, zoomInVariants } from "./animation";
+import {
+  slidedownVariants,
+  slideUpVariants,
+  zoomInVariants,
+} from "./animation";
 import { allservices } from "../export.js";
 const Portfolio = () => {
   return (
@@ -39,7 +43,7 @@ const Portfolio = () => {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        variants={zoomInVariants}
+        variants={slidedownVariants}
         className="w-full m-auto grid lg:grid-cols-4 grid-cols-1"
       >
         <div
