@@ -16,7 +16,7 @@ const About = () => {
         >
           <motion.h1
             variants={slideUpVariants}
-            className="text-yellow-500 text-2xl"
+            className="text-orange-500 text-2xl"
           >
             WELCOME TO
           </motion.h1>
@@ -26,7 +26,7 @@ const About = () => {
           >
             Top Construction
           </motion.h1>
-          <div className="w-[120px] h-[6px] bg-yellow-500 "></div>
+          <div className="w-[120px] h-[6px] bg-orange-500 "></div>
           <p className="text-3xl italic text-black mt-[60px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
             voluptatem sint ab dolorem esse qui amet, doloribus in cupiditate
@@ -55,7 +55,7 @@ const About = () => {
           </p>
           <motion.button
             variants={zoomInVariants}
-            className="bg-yellow-500 hover:bg-white hover:text-black px-10 py-3 rounded-lg text-black font-bold"
+            className="bg-orange-500 hover:bg-white hover:text-black px-10 py-3 rounded-lg text-black font-bold"
           >
             READ MORE
           </motion.button>

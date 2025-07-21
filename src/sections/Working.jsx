@@ -13,7 +13,7 @@ const Working = () => {
       >
         <motion.h1
           variants={slideUpVariants}
-          className="text-yellow-500 text-2xl"
+          className="text-orange-500 text-2xl"
         >
           STEP BY STEP
         </motion.h1>
@@ -25,7 +25,7 @@ const Working = () => {
         </motion.h1>
         <motion.div
           variants={slideUpVariants}
-          className="w-[120px] h-[6px] bg-yellow-500"
+          className="w-[120px] h-[6px] bg-orange-500"
         ></motion.div>
 
         {/*make div for service maping from export js file */}
@@ -39,11 +39,11 @@ const Working = () => {
           {planning.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col justify-center items-center gap-5 border-2 border-yellow-500 rounded-md p-6"
+              className="flex flex-col justify-center items-center gap-5 border-2 border-orange-500 rounded-md p-6"
             >
               <div className="">
                 <div className="flex flex-row !items-center gap-2">
-                  <item.icon className="size-[80px] bg-yellow-500 hover:bg-black hover:fill-white p-4 rounded-full cursor-pointer !items-center" />
+                  <item.icon className="size-[80px] bg-orange-500 hover:bg-black hover:fill-white p-4 rounded-full cursor-pointer !items-center" />
                   <h1 className="text-2xl font-bold uppercase ">
                     {item.title}
                   </h1>

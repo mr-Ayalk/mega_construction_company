@@ -13,7 +13,7 @@ const Testimonials = () => {
       >
         <motion.h1
           variants={slideUpVariants}
-          className="text-yellow-500 text-2xl"
+          className="text-orange-500 text-2xl"
         >
           TESTIMONIALS
         </motion.h1>
@@ -25,7 +25,7 @@ const Testimonials = () => {
         </motion.h1>
         <motion.div
           variants={slideUpVariants}
-          className="w-[120px] h-[6px] bg-yellow-500"
+          className="w-[120px] h-[6px] bg-orange-500"
         ></motion.div>
 
         {/*make div for service maping from export js file */}
@@ -53,7 +53,7 @@ const Testimonials = () => {
                 <h1 className="text-white text-[27px] font-semibold uppercase">
                   {item.name}
                 </h1>
-                <h1 className="text-yellow-500 text-[22px]">{item.post}</h1>
+                <h1 className="text-orange-500 text-[22px]">{item.post}</h1>
               </div>
             </div>
           ))}

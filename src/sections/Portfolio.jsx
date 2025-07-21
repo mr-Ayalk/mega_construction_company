@@ -21,7 +21,7 @@ const Portfolio = () => {
       >
         <motion.h1
           variants={slideUpVariants}
-          className="text-yellow-500 text-2xl"
+          className="text-orange-500 text-2xl"
         >
           PORTFOLIO
         </motion.h1>
@@ -33,7 +33,7 @@ const Portfolio = () => {
         </motion.h1>
         <motion.div
           variants={slideUpVariants}
-          className="w-[120px] h-[6px] bg-yellow-500"
+          className="w-[120px] h-[6px] bg-orange-500"
         ></motion.div>
       </motion.div>
       <motion.div
@@ -102,7 +102,9 @@ const Portfolio = () => {
             alt="project image"
             className="h-[250px] w-full  "
           />
-          <h3 className="items-center justify-center text-xl">Modern Building</h3>
+          <h3 className="items-center justify-center text-xl">
+            Modern Building
+          </h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
             doloribus recusandae{" "}
@@ -126,7 +128,9 @@ const Portfolio = () => {
             alt="project image"
             className="h-[250px] w-full  "
           />
-          <h3 className="items-center justify-center text-xl">Fancy Building</h3>
+          <h3 className="items-center justify-center text-xl">
+            Fancy Building
+          </h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
             doloribus recusandae{" "}

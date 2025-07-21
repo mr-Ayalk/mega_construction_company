@@ -33,13 +33,34 @@ const Header = () => {
   return (
     <nav className="w-full flex bg-white justify-between items-center gap-1 lg:px-16 px-6 py-4 sticky top-0 z-50">
       <h1 className="text-black md:text-4xl text-3xl  font-bold font-rubik">
-        Top <span className="text-yellow-500 italic">Construction</span>
+        Top <span className="text-orange-500  italic">Construction</span>
       </h1>
-      <ul className="lg:flex justify-center items-center gap-6 hidden">
+      <ul className="lg:flex justify-center items-center gap-6 hidden rounded-full shadow-lg border-[1px]  border-gray-400">
+        {/* {navItems.map(({ link, path }) => (
+          <Link
+            key={path}
+            className="text-black uppercase font-bold cursor-pointer p-3 rounded-full hover:bg-orange-300
+           
+            
+            px-5
+            hover:text-black text-[15px]"
+            to={path}
+            spy={true}
+            offset={-100}
+            smooth={true}
+          >
+            {link}
+          </Link>
+        ))} */}
         {navItems.map(({ link, path }) => (
           <Link
             key={path}
-            className="text-black uppercase font-bold cursor-pointer p-3 rounded-full hover:bg-yellow-500 hover:text-black text-[15px]"
+            className={`uppercase font-bold cursor-pointer p-3 rounded-full px-5 text-[15px] 
+      ${
+        link === "Contact"
+          ? "bg-orange-500 text-white hover:bg-black hover:text-white"
+          : "text-black hover:bg-orange-300 hover:text-black"
+      }`}
             to={path}
             spy={true}
             offset={-100}
@@ -49,7 +70,7 @@ const Header = () => {
           </Link>
         ))}
       </ul>
-      <button className="bg-yellow-600 hover:bg-black hover:text-white text-black px-10 py-3 rounded-full font-semibold transform hover:scale-105 transition-transform duration-300 cursor-pointer md:flex hidden">
+      <button className="bg-orange-500   hover:bg-black hover:text-white text-black  py-3 rounded-full font-semibold transform hover:scale-105 transition-transform duration-300 cursor-pointer md:flex hidden px-10">
         REACH US
       </button>
 
@@ -60,9 +81,9 @@ const Header = () => {
       >
         <div className="">
           {isMenuOpen ? (
-            <FaXmark className="text-yellow-500 text-3xl cursor-pointer" />
+            <FaXmark className="text-orange-500 text-3xl cursor-pointer" />
           ) : (
-            <FaBars className="text-yellow-500 text-3xl cursor-pointer" />
+            <FaBars className="text-orange-500 text-3xl cursor-pointer" />
           )}
         </div>
       </div>
@@ -70,7 +91,7 @@ const Header = () => {
       <div
         className={`${
           isMenuOpen ? "flex" : "hidden"
-        } w-full h-fit bg-yellow-500 p-4 absolute top-[72px] left-0`}
+        } w-full h-fit bg-orange-500 p-4 absolute top-[72px] left-0`}
         onClick={closeMenu}
       >
         <ul className="flex flex-col justify-center items-center gap-2 w-full">

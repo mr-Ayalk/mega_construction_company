@@ -16,7 +16,7 @@ const Contact = () => {
         >
           <motion.h1
             variants={slideUpVariants}
-            className="text-yellow-500 text-2xl"
+            className="text-orange-500 text-2xl"
           >
             CONTACT US
           </motion.h1>
@@ -27,7 +27,7 @@ const Contact = () => {
             REACH US FOR ANY QUERY
           </motion.h1>
 
-          <div className="w-[120px] h-[6px] bg-yellow-500 "></div>
+          <div className="w-[120px] h-[6px] bg-orange-500 "></div>
           <p className="text-3xl italic text-gray-600 mt-[60px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
             voluptatem sint ab dolorem esse
@@ -63,7 +63,7 @@ const Contact = () => {
 
             <motion.button
               variants={zoomInVariants}
-              className="bg-yellow-500 hover:bg-black hover:text-white px-10 py-4 transition delay-300 text-black font-bold rounded-lg w-full"
+              className="bg-orange-500 hover:bg-black hover:text-white px-10 py-4 transition delay-300 text-black font-bold rounded-lg w-full"
             >
               SUBMIT
             </motion.button>

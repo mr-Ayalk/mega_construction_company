@@ -100,6 +100,6 @@ export const clients = [
     name: "Henok K.",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
-    post: "Engineer",
+    post: "Structural Engineer",
   },
 ];

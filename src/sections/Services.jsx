@@ -13,7 +13,7 @@ const Services = () => {
       >
         <motion.h1
           variants={slideUpVariants}
-          className="text-yellow-500 text-2xl"
+          className="text-orange-500 text-2xl"
         >
           SPECIAL OFFER
         </motion.h1>
@@ -25,7 +25,7 @@ const Services = () => {
         </motion.h1>
         <motion.div
           variants={slideUpVariants}
-          className="w-[120px] h-[6px] bg-yellow-500"
+          className="w-[120px] h-[6px] bg-orange-500"
         ></motion.div>
 
         {/*make div for service maping from export js file */}
@@ -45,7 +45,7 @@ const Services = () => {
               <img
                 src={item.icon}
                 alt="icon"
-                className="w-[70px] border-2 border-yellow-500 hover:bg-yellow-500 rounded-lg p-2 text-white bg-white "
+                className="w-[70px] border-2 border-orange-500 hover:bg-orange-500 rounded-lg p-2 text-white bg-white "
               />
               <div className="flex flex-col justify-center items-start gap-3">
                 <h1 className="text-xl font-bold">{item.title}</h1>

@@ -19,7 +19,7 @@ const Hero = () => {
       >
         <motion.h1
           variants={slideUpVariants}
-          className="text-yellow-500 text-2xl"
+          className="text-orange-600 text-2xl"
         >
           WE ARE BUILDERS
         </motion.h1>
@@ -28,9 +28,9 @@ const Hero = () => {
           variants={slideUpVariants}
           className="text-white uppercase text-[50px] font-bold"
         >
-          We will build your dream
+          We Bring Your Dream to Life
         </motion.h1>
-        <div className="w-[120px] h-[6px] bg-yellow-500"></div>
+        <div className="w-[120px] h-[6px] bg-orange-600"></div>
         <p className="text-white text-[20px]">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem illum
           adipisci iure, impedit pariatur error ratione quos rerum totam, itaque
@@ -44,13 +44,13 @@ const Hero = () => {
         >
           <motion.button
             variants={zoomInVariants}
-            className="bg-yellow-500 hover:bg-white hover:text-black px-10 py-3 rounded-lg text-black font-bold"
+            className="bg-orange-600 hover:bg-white hover:text-black px-10 py-3 rounded-lg text-black font-bold"
           >
             READ MORE
           </motion.button>
           <motion.button
             variants={zoomInVariants}
-            className="border-white hover:border-yellow-500  hover:text-yellow-500 rounded-lg border-2 px-10 py-3 text-white font-bold"
+            className="border-white hover:border-orange-600  hover:text-orange-600 rounded-lg border-2 px-10 py-3 text-white font-bold"
           >
             REACH US
           </motion.button>
