@@ -1,5 +1,5 @@
 import React from "react";
-import heroimage from "../assets/heroimg.png";
+import heroimage from "../assets/mega_hero_image.png";
 import backgroundImage from "../assets/homeimg.webp";
 import { motion } from "framer-motion";
 import { slideUpVariants, zoomInVariants } from "./animation";
@@ -64,7 +64,7 @@ const Hero = () => {
           variants={zoomInVariants}
           src={heroimage}
           alt="hero image"
-          className="lg:h-[700px] h-[300px] lg:mb-[-100px]"
+          className="lg:h-[540px]   lg:mb-[-100px]"
         />
       </div>
     </div>
