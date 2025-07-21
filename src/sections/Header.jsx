@@ -43,7 +43,7 @@ const Header = () => {
             to={path}
             spy={true}
             smooth={true}
-            offset={0}
+            offset={50}
             duration={500}
             onClick={() => setActiveLink(link)} // immediate feedback
             onSetActive={() => setActiveLink(link)} // scroll-triggered update
