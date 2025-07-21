@@ -8,21 +8,22 @@ import Working from "./sections/Working";
 import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import StatsSection from "./sections/StatsSection";
 
 const App = () => {
   return (
-   <>
-   <Header/>
-   <Hero/>
-   <About/>
-   <Services/>
-   <Portfolio/>
-   <Working/>
-   <Testimonials/>
-   <Contact/>
-   <Footer/>
-   </>
-    
+    <>
+      <Header />
+      <Hero />
+      <StatsSection />
+      <About />
+      <Services />
+      <Portfolio />
+      <Working />
+      <Testimonials />
+      <Contact />
+      <Footer />
+    </>
   );
 };
 
