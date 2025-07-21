@@ -10,9 +10,9 @@ import { MdOutlineDesignServices } from "react-icons/md";
 import { FaRegBuilding } from "react-icons/fa";
 import { FaSitemap } from "react-icons/fa";
 
-import client1 from "../src/assets/client1.png";
-import client2 from "../src/assets/client2.png";
-import client3 from "../src/assets/client3.png";
+import client1 from "../src/assets/oli.jpg";
+import client2 from "../src/assets/ayalk.jpg";
+import client3 from "../src/assets/imojieng1.png";
 
 export const allservices = [
   {
@@ -83,23 +83,23 @@ export const planning = [
 export const clients = [
   {
     image: client1,
-    name: "Alex Parker",
+    name: "Oli Dereje",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
-    post: "Constructor",
+    post: "Civil Engineer",
   },
   {
     image: client2,
-    name: "Drew James",
+    name: "Ayalk Teketel",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
-    post: "Architect",
+    post: "Computer Engineer",
   },
   {
     image: client3,
-    name: "Sam Peterson",
+    name: "Henok K.",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
-    post: "Builder",
+    post: "Engineer",
   },
 ];

@@ -47,7 +47,7 @@ const Testimonials = () => {
               <div className="flex flex-col justify-center items-center gap-[5px]">
                 <img
                   src={item.image}
-                  className="mt-[-50px] z-30 "
+                  className="mt-[-50px] z-30 size-32 rounded-full "
                   alt="clients image"
                 />
                 <h1 className="text-white text-[27px] font-semibold uppercase">
